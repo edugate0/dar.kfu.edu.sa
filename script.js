@@ -283,8 +283,8 @@ function displayPaymentForm(student) {
             </div>
             <div class="card-content">
                 <div class="bank-details" style="margin-bottom: 1rem; font-size: 1rem; line-height: 1.8;">
-                    <strong>اسم البنك:</strong> مصرف الراجحي<br>
-                    <strong>رقم الآيبان:</strong> SA7880000856608014546763<br>
+                    <strong>اسم البنك:</strong> مصرف الانماء<br>
+                    <strong>رقم الآيبان:</strong> SA0505000068205963192000<br>
                 </div>
 
                 <form id="bank-transfer-form">
