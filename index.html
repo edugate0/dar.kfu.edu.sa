@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>جامعة الملك فيصل - نظام التحويل الخارجي</title>
+    <meta name="description" content="نظام التحويل الخارجي لجامعة الملك فيصل - استعلام عن حالة طلب التحويل وسداد الرسوم">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiByeD0iNCIgZmlsbD0iIzAwNUFBNyIvPgo8cGF0aCBkPSJNOCAxMmg0djhIOHYtOHpNMTQgOGg0djEyaC00Vjh6TTIwIDEwaDR2MTBoLTRWMTB6IiBmaWxsPSJ3aGl0ZSIvPgo8L3N2Zz4K">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <div class="university-logo">
+                        <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="64" height="64" rx="8" fill="#005AA7"/>
+                            <path d="M16 24h8v16h-8V24zM28 16h8v24h-8V16zM40 20h8v20h-8V20z" fill="white"/>
+                            <circle cx="32" cy="48" r="4" fill="white"/>
+                        </svg>
+                    </div>
+                    <div class="university-info">
+                        <h1 class="university-name">جامعة الملك فيصل</h1>
+                        <p class="system-name">نظام التحويل الخارجي</p>
+                    </div>
+                </div>
+            </div>
+            
+            <nav class="navigation">
+                <button class="nav-btn active" onclick="showPage('home')">
+                    <span class="nav-icon">🏠</span>
+                    الرئيسية
+                </button>
+                <button class="nav-btn" onclick="showPage('inquiry')">
+                    <span class="nav-icon">🔍</span>
+                    الاستعلام عن الطلب
+                </button>
+                <button class="nav-btn" onclick="showPage('payment')">
+                    <span class="nav-icon">💳</span>
+                    سداد الرسوم
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Home Page -->
+        <div id="home-page" class="page active">
+            <div class="container">
+                <div class="hero-section">
+                    <h2 class="hero-title">نظام التحويل الخارجي</h2>
+                    <p class="hero-description">
+                        منصة إلكترونية متكاملة للتحويل   الى جامعة الملك فيصل، 
+                        تتيح للطلاب الاستعلام عن طلباتهم وسداد الرسوم بسهولة
+                    </p>
+                </div>
+
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">🔍</div>
+                        <h3 class="service-title">الاستعلام عن حالة الطلب</h3>
+                        <p class="service-description">
+                            تحقق من حالة طلب التحويل الخاص بك باستخدام الرقم الجامعي
+                        </p>
+                        <button class="btn btn-primary" onclick="showPage('inquiry')">
+                            الاستعلام الآن
+                        </button>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">💳</div>
+                        <h3 class="service-title">سداد رسوم التحويل</h3>
+                        <p class="service-description">
+                            ادفع رسوم التحويل بأمان عبر النظام الإلكتروني بقيمة 800 ريال سعودي
+                        </p>
+                        <button class="btn btn-primary" onclick="showPage('payment')">
+                            سداد الرسوم
+                        </button>
+                    </div>
+                </div>
+
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">✅</div>
+                        <h4 class="feature-title">سهولة الاستخدام</h4>
+                        <p class="feature-description">
+                            واجهة بسيطة وسهلة الاستخدام تتيح لك الوصول لجميع الخدمات بكل يسر
+                        </p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">⏱️</div>
+                        <h4 class="feature-title">متابعة فورية</h4>
+                        <p class="feature-description">
+                            تابع حالة طلبك في الوقت الفعلي واحصل على تحديثات مستمرة
+                        </p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">👥</div>
+                        <h4 class="feature-title">دعم متخصص</h4>
+                        <p class="feature-description">
+                            فريق دعم متخصص لمساعدتك في جميع مراحل عملية التحويل
+                        </p>
+                    </div>
+                </div>
+
+                <div class="process-steps">
+                    <h3 class="steps-title">خطوات عملية التحويل الخارجي</h3>
+                    <div class="steps-grid">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <h4 class="step-title">تقديم الطلب</h4>
+                            <p class="step-description">قدم طلب التحويل الداخلي عبر النظام الأكاديمي</p>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <h4 class="step-title">مراجعة الطلب</h4>
+                            <p class="step-description">تتم مراجعة الطلب من قبل الجهات المختصة</p>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <h4 class="step-title">سداد الرسوم</h4>
+                            <p class="step-description">سداد رسوم التحويل عند قبول الطلب</p>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">4</div>
+                            <h4 class="step-title">تأكيد التحويل</h4>
+                            <p class="step-description">تأكيد نهائي للتحويل وبدء الدراسة في التخصص الجديد</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Inquiry Page -->
+        <div id="inquiry-page" class="page">
+            <div class="container">
+                <div class="page-header">
+                    <h2 class="page-title">الاستعلام عن حالة طلب التحويل</h2>
+                    <p class="page-description">أدخل الرقم الجامعي للاستعلام عن حالة طلب التحويل الخارجي</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">
+                            <span class="card-icon">🔍</span>
+                            البحث بالرقم الجامعي
+                        </h3>
+                        <p class="card-description">أدخل الرقم الجامعي للطالب للبحث عن معلومات طلب التحويل</p>
+                    </div>
+                    <div class="card-content">
+                        <div class="form-group">
+                            <label for="studentId" class="form-label">الرقم الجامعي</label>
+                            <input type="text" id="studentId" class="form-input" placeholder=" " dir="ltr">
+                        </div>
+                        <div id="inquiry-error" class="error-message hidden"></div>
+                        <button id="search-btn" class="btn btn-primary btn-full" onclick="searchStudent()">
+                            <span class="btn-icon">🔍</span>
+                            بحث
+                        </button>
+                    </div>
+                </div>
+
+                <div id="student-details" class="card hidden">
+                    <!-- Student details will be populated here -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Payment Page -->
+        <div id="payment-page" class="page">
+            <div class="container">
+                <div class="page-header">
+                    <h2 class="page-title">سداد رسوم التحويل الداخلي</h2>
+                    <p class="page-description">ادفع رسوم التحويل بأمان عبر النظام الإلكتروني</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">
+                            <span class="card-icon">🔍</span>
+                            البحث بالرقم الجامعي
+                        </h3>
+                        <p class="card-description">أدخل الرقم الجامعي للطالب للمتابعة مع عملية الدفع</p>
+                    </div>
+                    <div class="card-content">
+                        <div class="form-group">
+                            <label for="paymentStudentId" class="form-label">الرقم الجامعي</label>
+                            <input type="text" id="paymentStudentId" class="form-input" placeholder=" " dir="ltr">
+                        </div>
+                        <div id="payment-error" class="error-message hidden"></div>
+                        <button id="payment-search-btn" class="btn btn-primary btn-full" onclick="searchForPayment()">
+                            <span class="btn-icon">🔍</span>
+                            بحث
+                        </button>
+                    </div>
+                </div>
+
+                <div id="payment-form" class="hidden">
+                    <!-- Payment form will be populated here -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Confirmation Page -->
+        <div id="confirmation-page" class="page">
+            <div class="container">
+                <div class="confirmation-card">
+                    <div class="success-icon">✅</div>
+                    <h2 class="confirmation-title">تم الدفع بنجاح</h2>
+                    <p class="confirmation-description">تم سداد رسوم التحويل الخارجي بنجاح</p>
+                    
+                    <div class="transaction-details">
+                        <h3 class="details-title">تفاصيل العملية</h3>
+                        <div class="detail-row">
+                            <span class="detail-label">رقم العملية:</span>
+                            <span class="detail-value" id="transaction-id">TXN-2024-001</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">المبلغ المدفوع:</span>
+                            <span class="detail-value">800 ريال سعودي</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">تاريخ الدفع:</span>
+                            <span class="detail-value" id="payment-date"></span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">حالة الدفع:</span>
+                            <span class="detail-value success">مكتمل</span>
+                        </div>
+                    </div>
+
+                    <div class="notice">
+                        <p><strong>ملاحظة مهمة:</strong> احتفظ برقم العملية للمراجعة المستقبلية. 
+                        سيتم إرسال إيصال الدفع إلى بريدك الإلكتروني خلال 24 ساعة.</p>
+                    </div>
+
+                    <div class="action-buttons">
+                        <button class="btn btn-primary" onclick="downloadReceipt()">
+                            <span class="btn-icon">📥</span>
+                            تحميل الإيصال
+                        </button>
+                        <button class="btn btn-outline" onclick="showPage('inquiry')">
+                            <span class="btn-icon">🔍</span>
+                            متابعة الطلب
+                        </button>
+                        <button class="btn btn-ghost" onclick="showPage('home')">
+                            <span class="btn-icon">🏠</span>
+                            العودة للرئيسية
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">جامعة الملك فيصل</h3>
+                    <p class="footer-description">
+                        جامعة الملك فيصل - إحدى الجامعات الرائدة في المملكة العربية السعودية، 
+                        تسعى لتقديم تعليم عالي الجودة وخدمات أكاديمية متميزة.
+                    </p>
+                </div>
+
+                <div class="footer-section">
+                    <h3 class="footer-title">معلومات الاتصال</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <span class="contact-icon">📞</span>
+                            <span>920000361</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">✉️</span>
+                            <span>info@kfu.edu.sa</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📍</span>
+                            <span>الأحساء - المملكة العربية السعودية</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">🌐</span>
+                            <span>www.kfu.edu.sa</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3 class="footer-title">خدمات أكاديمية</h3>
+                    <ul class="services-list">
+                        <li>• التحويل الداخلي بين التخصصات</li>
+                        <li>• الاستعلام عن حالة الطلبات</li>
+                        <li>• سداد الرسوم الجامعية</li>
+                        <li>• الدعم التقني والأكاديمي</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>جميع الحقوق محفوظة © 2025 - جامعة الملك فيصل</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Loading Overlay -->
+    <div id="loading-overlay" class="loading-overlay hidden">
+        <div class="spinner"></div>
+        <p class="loading-text">جاري المعالجة...</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
